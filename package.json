@@ -1,0 +1,20 @@
+{
+  "name": "campus-notifications-submission",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "logging_middleware",
+    "notification_app_be",
+    "notification_app_fe"
+  ],
+  "scripts": {
+    "stage1": "npm --workspace notification_app_be run stage1",
+    "stage1:sample": "npm --workspace notification_app_be run stage1:sample",
+    "dev:frontend": "npm --workspace notification_app_fe run dev",
+    "build:frontend": "npm --workspace notification_app_fe run build"
+  },
+  "dependencies": {
+    "ably": "^2.21.0"
+  }
+}
